@@ -21,5 +21,10 @@ pipeline {
                 sh 'ssh root@kvsvm \'uptime\''
             }
         }
+        stage("Third step") {
+            steps {
+                sh 'ssh root@kvsvm \'ls -al\''
+            }
+        }
     }
 }
