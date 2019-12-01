@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh root@kvsvm1 \'hostname\''
+                sh 'ssh root@kvsvm \'hostname\''
             }
         }
         stage("Second step") {
